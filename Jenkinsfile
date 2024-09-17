@@ -1,5 +1,5 @@
 pipeline {
-  agent any
+  agent { node { label 'dev-chatbot-admin-backend' } }
   stages {
     stage("verify tooling") {
       steps {
